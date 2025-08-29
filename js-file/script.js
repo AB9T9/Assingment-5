@@ -1,4 +1,3 @@
-console.log("hello world ! ");
 const coinText = document.getElementById("coin");
 let coinCount = parseInt(coinText.innerText);
 //! working for nav bar
@@ -15,7 +14,6 @@ for (const heart of heartButton) {
 }
 //! working with calling coing ;
 
-console.log(coinCount);
 const callButton = document.getElementsByClassName("call-button");
 for (const call of callButton) {
   call.addEventListener("click", function (e) {
@@ -45,8 +43,6 @@ for (const call of callButton) {
     } else {
       alert("You have no sufficient balance,Mininum 20 coin required for call");
     }
-
-    console.log("i am click by call function ");
   });
 }
 //! making history remove button
@@ -55,3 +51,21 @@ document.getElementById("clear").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("history-add").innerHTML = "";
 });
+
+// ! making copy button
+let count = 0;
+const copyBtn = document.getElementsByClassName("copy-button");
+const copyText = document.getElementById("copy-text");
+const copyCount = document.getElementById("copy-count");
+for (const btn of copyBtn) {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const serviceNumber =
+      btn.parentElement.parentElement.querySelector("h2").innerText;
+    navigator.clipboard.writeText(serviceNumber);
+    alert("Number is copied : " + serviceNumber);
+
+    count++;
+    copyCount.innerText = count;
+  });
+}
