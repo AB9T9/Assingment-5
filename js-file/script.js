@@ -26,7 +26,7 @@ for (const call of callButton) {
 
     if (coinCount > 0) {
       coinCount = coinCount - 20;
-      alert("Calling " + serviceName + serviceNumber);
+      alert("📞 Calling " + serviceName + serviceNumber);
       document.getElementById("coin").innerText = coinCount;
       // added into histoy
       const historyPart = document.getElementById("history-add");

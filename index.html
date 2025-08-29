@@ -23,7 +23,9 @@
   <body class="mx-auto max-w-[1400px]">
     <nav>
       <!-- main div container  -->
-      <div class="p-5 max-h-[100px]w-full flex justify-between">
+      <div
+        class="p-5 max-h-[100px]w-full flex justify-between sm:{justify-around}"
+      >
         <!-- nav left content  -->
         <div class="flex items-center gap-5">
           <img src="./assets/logo.png" alt="" class="object-contain h-[60px]" />
@@ -85,9 +87,9 @@
     </header>
     <main>
       <!-- Emergency card section making  -->
-      <section class="min-h-[1000px] bg-[#DFEFFF] flex">
-        <!-- card div right contaiener -->
-        <div class="grid grid-cols-3 gap-[30px] w-[75%] p-5">
+      <section class="min-h-[1000px] bg-[#DFEFFF] flex sm:(flex-col)">
+        <!-- card div left contaiener -->
+        <div class="grid grid-cols-3 gap-[30px] w-[75%] p-5 sm:grid-cols-1">
           <!-- card div 1-->
           <div
             class="rounded-[12px] max-w-[400px] p-5 flex flex-col gap-3 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]"
