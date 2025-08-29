@@ -85,9 +85,7 @@
     </header>
     <main>
       <!-- Emergency card section making  -->
-      <section
-        class="border-2 border-green-500 min-h-[1000px] bg-[#DFEFFF] flex"
-      >
+      <section class="min-h-[1000px] bg-[#DFEFFF] flex">
         <!-- card div right contaiener -->
         <div class="grid grid-cols-3 gap-[30px] w-[75%] p-5">
           <!-- card div 1-->
@@ -460,7 +458,7 @@
             </div>
           </div>
         </div>
-        <!-- card div left container -->
+        <!-- card div right container -->
         <div class="w-[30%] p-5">
           <div class="h-full bg-white rounded-[12px]">
             <div class="flex justify-between items-center p-3">
@@ -470,17 +468,12 @@
               </button>
               <button
                 class="p-4 bg-[#00A63E] rounded-[50px] text-white w-[120px]"
+                id="clear"
               >
                 Clear
               </button>
             </div>
-            <div class="flex justify-between items-center p-3 mt-3">
-              <div>
-                <h1 class="font-semibold text-xl">Fire service number</h1>
-                <p class="text-[#5C5C5C]">999</p>
-              </div>
-              <h1 class="text-[18px]">11:36:58 AM</h1>
-            </div>
+            <div id="history-add"></div>
           </div>
         </div>
       </section>
